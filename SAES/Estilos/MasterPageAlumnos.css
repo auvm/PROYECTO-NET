@@ -198,10 +198,10 @@
 .ContenidoAlumnosMain {
     height: auto;
     width: 100%;
-    padding: 5%;
+    padding:0;
     text-align: center;
-}
 
+}
 
 
 .img{

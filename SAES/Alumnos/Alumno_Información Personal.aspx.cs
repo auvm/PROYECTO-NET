@@ -11,9 +11,13 @@ namespace SAES.Alumnos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Label msg = new Label();
-            //msg.Text = "<h2>Bienvenido</h2>";
-            //PlaceHolderContenido.Controls.Add(msg);
+            if(IsPostBack == false)
+            {
+                Label msg = new Label();
+                msg.Text = "<h2>Bienvenido</h2>";
+                PlaceHolderContenido.Controls.Add(msg);
+            }
+
         }
 
         protected void lbInfoPersonal_Click(object sender, EventArgs e)
@@ -67,6 +71,7 @@ namespace SAES.Alumnos
             Label lblTitulo = new Label();
             lblTitulo.Text = "<h3>Horario</h3><br/>";
             PlaceHolderContenido.Controls.Add(lblTitulo);
+
         }
 
         protected void lbCalificaciones_Click(object sender, EventArgs e)
