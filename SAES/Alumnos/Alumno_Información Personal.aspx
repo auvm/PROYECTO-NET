@@ -7,10 +7,6 @@
     <main class ="AlumnosMain">    
         <div class="OpcionesAlumnosMain">
             <ul>
-                <%--<li><a href="#">Información Personal</a></li>
-                <li><a href="#">Horario</a></li>
-                <li><a href="#">Calificaiones</a></li>
-                <li><a href="#">Cerrar Sesión</a></li>--%>
                 <li><asp:LinkButton ID="lbInfoPersonal" runat="server" Text="Información Personal" OnClick="lbInfoPersonal_Click"></asp:LinkButton></li>
                 <li><asp:LinkButton ID="lbHorario" runat="server" Text="Horario" OnClick="lbHorario_Click"></asp:LinkButton></li>
                 <li><asp:LinkButton ID="lbCalificaciones" runat="server" Text="Calificaciones" OnClick="lbCalificaciones_Click"></asp:LinkButton></li>

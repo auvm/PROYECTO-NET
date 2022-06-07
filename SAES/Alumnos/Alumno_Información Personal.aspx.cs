@@ -11,15 +11,17 @@ namespace SAES.Alumnos
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //Label msg = new Label();
+            //msg.Text = "<h2>Bienvenido</h2>";
+            //PlaceHolderContenido.Controls.Add(msg);
         }
 
         protected void lbInfoPersonal_Click(object sender, EventArgs e)
         {
             Label lblTitulo = new Label();
-            lblTitulo.Text = "Información Personal<br/>";
+            lblTitulo.Text = "<h3>Información Personal</h3><br/>";
             PlaceHolderContenido.Controls.Add(lblTitulo);
-         
+
             //TODO: AGREGAR IMAGEN de la base de datos
             //< h3 > Foto:</ h3 >
             //< asp:Image ID = "imgPefil" runat = "server" alt = "imagen" CssClass = "img" />< br />< br />
@@ -45,7 +47,7 @@ namespace SAES.Alumnos
             lblNombre.Text = "<br/>Nombre: " + nombre + "<br/>";
             lblFechaNacimiento.Text = "Fecha de Nacimiento: " + fechaNacimiento + "<br/>";
             lblTelefono.Text = "Teléfono: " + telefono + "<br/>";
-            lblCorreo.Text = "Correo Electrónico: " + correo + "<br/>";    
+            lblCorreo.Text = "Correo Electrónico: " + correo + "<br/>";
             lblDireccion.Text = "Dirección: " + direccion + "<br/>";
 
             PlaceHolderContenido.Controls.Add(lblNombre);
@@ -56,17 +58,22 @@ namespace SAES.Alumnos
 
         }
 
+        
+
+
         protected void lbHorario_Click(object sender, EventArgs e)
         {
+            
             Label lblTitulo = new Label();
-            lblTitulo.Text = "Horario<br/>";
+            lblTitulo.Text = "<h3>Horario</h3><br/>";
             PlaceHolderContenido.Controls.Add(lblTitulo);
         }
 
         protected void lbCalificaciones_Click(object sender, EventArgs e)
         {
+            
             Label lblTitulo = new Label();
-            lblTitulo.Text = "Calificaciones<br/>";
+            lblTitulo.Text = "<h3>Calificaciones</h3><br/>";
             PlaceHolderContenido.Controls.Add(lblTitulo);
         }
     }
