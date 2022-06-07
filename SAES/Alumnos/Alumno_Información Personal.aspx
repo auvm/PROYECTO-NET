@@ -7,23 +7,19 @@
     <main class ="AlumnosMain">    
         <div class="OpcionesAlumnosMain">
             <ul>
-                <li><a href="#">Información Personal</a></li>
+                <%--<li><a href="#">Información Personal</a></li>
                 <li><a href="#">Horario</a></li>
                 <li><a href="#">Calificaiones</a></li>
-                <li><a href="#">Cerrar Sesión</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>--%>
+                <li><asp:LinkButton ID="lbInfoPersonal" runat="server" Text="Información Personal" OnClick="lbInfoPersonal_Click"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lbHorario" runat="server" Text="Horario" OnClick="lbHorario_Click"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lbCalificaciones" runat="server" Text="Calificaciones" OnClick="lbCalificaciones_Click"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión"></asp:LinkButton></li>
             </ul>
         </div>
 
         <div class="ContenidoAlumnosMain">            
-            <asp:Label ID="lblTitulo" runat="server" Text="Información personal"></asp:Label><br />
-            <h3>Foto:</h3>
-                <asp:Image ID="imgPefil" runat="server" alt="imagen" CssClass="img"/><br /><br />
-                <asp:Label ID="lblNombre" runat="server" Text="Nombre: "></asp:Label><br />
-                <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de Nacimiento: "></asp:Label><br />
-                <asp:Label ID="lblTelefono" runat="server" Text="Teléfono: "></asp:Label><br />
-                <asp:Label ID="lblCorreo" runat="server" Text="Correo electrónico: "></asp:Label><br />
-                <asp:Label ID="lblDirección" runat="server" Text="Dirección: "></asp:Label><br />
-                                    
+            <asp:PlaceHolder ID="PlaceHolderContenido" runat="server"></asp:PlaceHolder>     
         </div>  
     </main>
 </asp:Content>

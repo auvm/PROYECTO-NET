@@ -72,6 +72,8 @@
     <Content Include="Alumnos\Alumno_Información Personal.aspx" />
     <Content Include="Alumnos\Alumno_Agenda_AgendaEscolar.aspx" />
     <Content Include="Estilos\MasterPageAlumnos.css" />
+    <Content Include="Imagenes-BorrarAlFinal\fotoHombre.PNG" />
+    <Content Include="Imagenes-BorrarAlFinal\fotoMujer.PNG" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
