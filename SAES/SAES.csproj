@@ -74,6 +74,10 @@
     <Content Include="Estilos\MasterPageAlumnos.css" />
     <Content Include="Imagenes-BorrarAlFinal\fotoHombre.PNG" />
     <Content Include="Imagenes-BorrarAlFinal\fotoMujer.PNG" />
+    <Content Include="Profesores\Profesor_Agenda.aspx" />
+    <Content Include="Profesores\Profesor_Ayuda.aspx" />
+    <Content Include="Profesores\Profesor_Configuracion.aspx" />
+    <Content Include="Profesores\Profesor_Informacion_Personal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -112,10 +116,46 @@
     <Compile Include="Master\MasterPageAlumnos.Master.designer.cs">
       <DependentUpon>MasterPageAlumnos.Master</DependentUpon>
     </Compile>
+    <Compile Include="Master\MasterPageProfesores.Master.cs">
+      <DependentUpon>MasterPageProfesores.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterPageProfesores.Master.designer.cs">
+      <DependentUpon>MasterPageProfesores.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Agenda.aspx.cs">
+      <DependentUpon>Profesor_Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Agenda.aspx.designer.cs">
+      <DependentUpon>Profesor_Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Ayuda.aspx.cs">
+      <DependentUpon>Profesor_Ayuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Ayuda.aspx.designer.cs">
+      <DependentUpon>Profesor_Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Configuracion.aspx.cs">
+      <DependentUpon>Profesor_Configuracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Configuracion.aspx.designer.cs">
+      <DependentUpon>Profesor_Configuracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Informacion_Personal.aspx.cs">
+      <DependentUpon>Profesor_Informacion_Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesores\Profesor_Informacion_Personal.aspx.designer.cs">
+      <DependentUpon>Profesor_Informacion_Personal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Master\MasterPageAlumnos.Master" />
+    <Content Include="Master\MasterPageProfesores.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -126,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Personal\" />
-    <Folder Include="Profesores\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
