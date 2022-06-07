@@ -15,17 +15,16 @@
         </div>
 
         <div class="ContenidoAlumnosMain">            
-            
-            <h3 class></h3>
             <asp:Label ID="lblTitulo" runat="server" Text="Información personal"></asp:Label><br />
-            <asp:Image ID="imgPefil" runat="server" /><br />
-            <asp:Label ID="lblNombre" runat="server" Text="Nombre: "></asp:Label><br />
-            <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de Nacimiento: "></asp:Label><br />
-            <asp:Label ID="lblTelefono" runat="server" Text="Teléfono: "></asp:Label><br />
-            <asp:Label ID="lblCorreo" runat="server" Text="Correo electrónico: "></asp:Label><br />
-            <asp:Label ID="lblDirección" runat="server" Text="Dirección: "></asp:Label><br />
-                        
-        </div>
+            <h3>Foto:</h3>
+                <asp:Image ID="imgPefil" runat="server" alt="imagen" CssClass="img"/><br /><br />
+                <asp:Label ID="lblNombre" runat="server" Text="Nombre: "></asp:Label><br />
+                <asp:Label ID="lblFechaNacimiento" runat="server" Text="Fecha de Nacimiento: "></asp:Label><br />
+                <asp:Label ID="lblTelefono" runat="server" Text="Teléfono: "></asp:Label><br />
+                <asp:Label ID="lblCorreo" runat="server" Text="Correo electrónico: "></asp:Label><br />
+                <asp:Label ID="lblDirección" runat="server" Text="Dirección: "></asp:Label><br />
+                                    
+        </div>  
     </main>
 </asp:Content>
 

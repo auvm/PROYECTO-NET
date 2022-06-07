@@ -198,7 +198,14 @@
 .ContenidoAlumnosMain {
     height: auto;
     width: 100%;
-    padding: 10px, 50px, 10px, 50px;
-    text-align:center;
+    padding: 5%;
+    text-align: center;
 }
 
+
+
+.img{
+    border:1px solid black;
+    height: 300px;
+    width:250px;
+}

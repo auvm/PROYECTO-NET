@@ -67,17 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alumnos\Alumno_Ayuda_AyudaGeneral.aspx" />
+    <Content Include="Alumnos\Alumno_Configuracion_RecuperarContraseña.aspx" />
     <Content Include="Alumnos\Alumno_Información Personal.aspx" />
+    <Content Include="Alumnos\Alumno_Agenda_AgendaEscolar.aspx" />
     <Content Include="Estilos\MasterPageAlumnos.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumnos\Alumno_Ayuda_AyudaGeneral.aspx.cs">
+      <DependentUpon>Alumno_Ayuda_AyudaGeneral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alumnos\Alumno_Ayuda_AyudaGeneral.aspx.designer.cs">
+      <DependentUpon>Alumno_Ayuda_AyudaGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos\Alumno_Configuracion_RecuperarContraseña.aspx.cs">
+      <DependentUpon>Alumno_Configuracion_RecuperarContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alumnos\Alumno_Configuracion_RecuperarContraseña.aspx.designer.cs">
+      <DependentUpon>Alumno_Configuracion_RecuperarContraseña.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Alumnos\Alumno_Información Personal.aspx.cs">
       <DependentUpon>Alumno_Información Personal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Alumnos\Alumno_Información Personal.aspx.designer.cs">
       <DependentUpon>Alumno_Información Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alumnos\Alumno_Agenda_AgendaEscolar.aspx.cs">
+      <DependentUpon>Alumno_Agenda_AgendaEscolar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alumnos\Alumno_Agenda_AgendaEscolar.aspx.designer.cs">
+      <DependentUpon>Alumno_Agenda_AgendaEscolar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Master\MasterPageAlumnos.Master.cs">
       <DependentUpon>MasterPageAlumnos.Master</DependentUpon>

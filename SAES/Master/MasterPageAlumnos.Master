@@ -24,10 +24,10 @@
         <div class="CentroNav">
             
             <ul>
-                <li><a href="#">Alumno</a></li>
-                <li><a href="#">Agenda  </a></li>
-                <li><a href="#">Configuración</a></li>
-                <li><a href="#">Ayuda</a></li>
+                <li><a href="../Alumnos/Alumno_Información Personal.aspx">Alumno</a></li>
+                <li><a href="../Alumnos/Alumno_Agenda_AgendaEscolar.aspx">Agenda  </a></li>
+                <li><a href="../Alumnos/Alumno_Configuracion_RecuperarContraseña.aspx">Configuración</a></li>
+                <li><a href="../Alumnos/Alumno_Ayuda_AyudaGeneral.aspx">Ayuda</a></li>
             </ul>
             
         </div>
