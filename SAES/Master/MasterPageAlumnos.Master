@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageAlumnos.Master.cs" Inherits="SAES.Master.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageAlumnos.Master.cs"
+    Inherits="SAES.Master.Site1" %>
 
 <!DOCTYPE html>
 

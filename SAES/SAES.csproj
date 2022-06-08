@@ -72,9 +72,14 @@
     <Content Include="Alumnos\Alumno_Información Personal.aspx" />
     <Content Include="Alumnos\Alumno_Agenda_AgendaEscolar.aspx" />
     <Content Include="Estilos\MasterPageAlumnos.css" />
+    <Content Include="Estilos\MasterPagePersonal.css" />
     <Content Include="Estilos\MasterPageProfesores.css" />
     <Content Include="Imagenes-BorrarAlFinal\fotoHombre.PNG" />
     <Content Include="Imagenes-BorrarAlFinal\fotoMujer.PNG" />
+    <Content Include="Personal\Personal_Agenda.aspx" />
+    <Content Include="Personal\Personal_Ayuda.aspx" />
+    <Content Include="Personal\Personal_Configuracion.aspx" />
+    <Content Include="Personal\Personal_Informacion_Personal.aspx" />
     <Content Include="Profesores\Profesor_Agenda.aspx" />
     <Content Include="Profesores\Profesor_Ayuda.aspx" />
     <Content Include="Profesores\Profesor_Configuracion.aspx" />
@@ -124,6 +129,41 @@
     <Compile Include="Master\MasterPageProfesores.Master.designer.cs">
       <DependentUpon>MasterPageProfesores.Master</DependentUpon>
     </Compile>
+    <Compile Include="Master\MasterPagePersonal.Master.cs">
+      <DependentUpon>MasterPagePersonal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\MasterPagePersonal.Master.designer.cs">
+      <DependentUpon>MasterPagePersonal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\Personal_Agenda.aspx.cs">
+      <DependentUpon>Personal_Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personal\Personal_Agenda.aspx.designer.cs">
+      <DependentUpon>Personal_Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\Personal_Ayuda.aspx.cs">
+      <DependentUpon>Personal_Ayuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personal\Personal_Ayuda.aspx.designer.cs">
+      <DependentUpon>Personal_Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\Personal_Configuracion.aspx.cs">
+      <DependentUpon>Personal_Configuracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personal\Personal_Configuracion.aspx.designer.cs">
+      <DependentUpon>Personal_Configuracion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personal\Personal_Informacion_Personal.aspx.cs">
+      <DependentUpon>Personal_Informacion_Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personal\Personal_Informacion_Personal.aspx.designer.cs">
+      <DependentUpon>Personal_Informacion_Personal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Profesores\Profesor_Agenda.aspx.cs">
       <DependentUpon>Profesor_Agenda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,6 +197,7 @@
   <ItemGroup>
     <Content Include="Master\MasterPageAlumnos.Master" />
     <Content Include="Master\MasterPageProfesores.Master" />
+    <Content Include="Master\MasterPagePersonal.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -165,9 +206,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Personal\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
