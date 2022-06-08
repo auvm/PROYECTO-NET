@@ -89,6 +89,53 @@ namespace SAES.Personal
             Label lblTitulo = new Label();
             lblTitulo.Text = "<h3>Grupos</h3><br/>";
             PlaceHolderContenido.Controls.Add(lblTitulo);
+
+            Label lblDescripcion = new Label();
+            lblDescripcion.Text = "<p>Para crear un nuevo grupo ingrese los siguientes datos, luego " +
+                                            "presione 'Crear'.</p></br>";
+            PlaceHolderContenido.Controls.Add(lblDescripcion);
+
+            Label lblSecuencia = new Label();
+            lblSecuencia.Text = "Secuencia: ";
+            PlaceHolderContenido.Controls.Add(lblSecuencia);
+            TextBox txtSecuencia = new TextBox();
+            PlaceHolderContenido.Controls.Add(txtSecuencia);
+
+            Label lblNombreSecuencia = new Label();
+            lblNombreSecuencia.Text = "  Nombre de la Materia: ";
+            PlaceHolderContenido.Controls.Add(lblNombreSecuencia);
+            TextBox txtNombreSecuencia = new TextBox();
+            PlaceHolderContenido.Controls.Add(txtNombreSecuencia);
+
+            Button btnCrear = new Button();
+            btnCrear.Text = "Crear";
+            PlaceHolderContenido.Controls.Add((Button)btnCrear);
+            //TODO: Conextar a la BD, tomar la secuencia y el nombre del grupo a crear
+            //de los texbox y mandar a crear el grupo en la BD.
+
+            //------------Parte Modificar grupo
+
+            Label lblDescripcion2 = new Label();
+            lblDescripcion2.Text = "</br><p>Para asignar alumnos y un profesor al grupo creado, primero selecione un grupo" +
+                                  "luego en 'Modificar'.</p></br>";
+            PlaceHolderContenido.Controls.Add(lblDescripcion2);
+
+            DropDownList ddlGrupos = new DropDownList();
+            //TODO: Conectar a la BD, obtener los nombres de todas las materias 
+            // y subirlas al ddl para poder utilizarlas.
+            ddlGrupos.Items.Add(new ListItem("3AM10 - Matemáticas"));
+            PlaceHolderContenido.Controls.Add(ddlGrupos);
+
+            Button btnModificar = new Button();
+            btnModificar.Text = "Modificar";
+            PlaceHolderContenido.Controls.Add((Button)btnModificar);
+
+            //TODO: Conecatar a la BD, tomar el grupo seleccionado del dropdownlist y mostrarlo a un
+            //data gridview, con opción de modificar y eliminar alumnos y el profesor mostrarlo en un 
+            //campo aparte 
+
         }
+
+
     }
 }
