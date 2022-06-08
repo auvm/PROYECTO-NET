@@ -24,6 +24,108 @@ namespace SAES.Personal
             Label lblTitulo = new Label();
             lblTitulo.Text = "<h3>Agenda Escolar</h3><br/>";
             PlaceHolderContenido.Controls.Add(lblTitulo);
+
+            Label lblDescripcion = new Label();
+            lblDescripcion.Text = "<p>Para crear un nuevo evento escolar ingrese los datos solicitados a" +
+                                  "continuación, luego de click en 'Enviar'.</p></br>";
+            PlaceHolderContenido.Controls.Add(lblDescripcion);
+
+            Label lblNombreEvento = new Label();
+            lblNombreEvento.Text = "Nombre del evento: ";
+            PlaceHolderContenido.Controls.Add((Label)lblNombreEvento);
+            TextBox txtNombreEvento = new TextBox();
+            PlaceHolderContenido.Controls.Add(txtNombreEvento);
+            
+            //------------------------------Selecciona Fechas
+            Label lblFecha = new Label();
+            lblFecha.Text = "</br></br><i>¡Seleccione una fecha de inicio!</i></br>";
+            PlaceHolderContenido.Controls.Add(lblFecha);
+
+            Label lblDia = new Label();
+            lblDia.Text = " Día: ";
+            DropDownList ddlDia = new DropDownList();
+            ListItem item;
+            for (int i = 1; i <= 31; i++)
+            {
+                item = new ListItem(i.ToString());
+                ddlDia.Items.Add(item);
+            }
+            PlaceHolderContenido.Controls.Add(lblDia);
+            PlaceHolderContenido.Controls.Add(ddlDia);
+
+
+            Label lblMes = new Label();
+            lblMes.Text = " Mes: ";
+            DropDownList ddlMes = new DropDownList();
+            for (int i = 1; i <= 12; i++)
+            {
+                item = new ListItem(i.ToString());
+                ddlMes.Items.Add(item);
+            }
+            PlaceHolderContenido.Controls.Add(lblMes);
+            PlaceHolderContenido.Controls.Add(ddlMes);
+
+            Label lblAnio = new Label();
+            lblAnio.Text = " Anio: ";
+            DropDownList ddlAnio = new DropDownList();
+            PlaceHolderContenido.Controls.Add(lblAnio);
+            PlaceHolderContenido.Controls.Add(ddlAnio);
+            for (int i = 2022; i <= 2030; i++)
+            {
+                item = new ListItem(i.ToString());
+                ddlAnio.Items.Add(item);
+            }
+
+            Label lblFechaFin = new Label();
+            lblFechaFin.Text = "</br></br><i>¡Seleccione una fecha de fin!</i></br>";
+
+            PlaceHolderContenido.Controls.Add(lblFechaFin);
+
+            Label lblDiaFin = new Label();
+            lblDiaFin.Text = " Día: ";
+            DropDownList ddlDiaFin = new DropDownList();
+            
+            for (int i = 1; i <= 31; i++)
+            {
+                item = new ListItem(i.ToString());
+                ddlDiaFin.Items.Add(item);
+            }
+            PlaceHolderContenido.Controls.Add(lblDiaFin);
+            PlaceHolderContenido.Controls.Add(ddlDiaFin);
+
+
+            Label lblMesFin = new Label();
+            lblMesFin.Text = " Mes: ";
+            DropDownList ddlMesFin = new DropDownList();
+            for (int i = 1; i <= 12; i++)
+            {
+                item = new ListItem(i.ToString());
+                ddlMesFin.Items.Add(item);
+            }
+            PlaceHolderContenido.Controls.Add(lblMesFin);
+            PlaceHolderContenido.Controls.Add(ddlMesFin);
+
+            Label lblAnioFin = new Label();
+            lblAnioFin.Text = " Anio: ";
+            DropDownList ddlAnioFin = new DropDownList();
+            for (int i = 2022; i <= 2030; i++)
+            {
+                item = new ListItem(i.ToString());
+                ddlAnioFin.Items.Add(item);
+            }
+            PlaceHolderContenido.Controls.Add(lblAnioFin);
+            PlaceHolderContenido.Controls.Add(ddlAnioFin);
+
+            Button btnEnviar = new Button();
+            btnEnviar.Text = "Enviar";
+            PlaceHolderContenido.Controls.Add(btnEnviar);
+
+            Label lblTitulo2 = new Label();
+            lblTitulo2.Text = "</br><h3>Agenda de eventos</h3></br>";
+            PlaceHolderContenido.Controls.Add(lblTitulo2);
+
+            //TODO: conectarse a la DB y obtener la tabla de 
+            //eventos existentes, después mostrarlo en un gridview
         }
     }
 }
