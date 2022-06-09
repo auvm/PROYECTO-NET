@@ -121,11 +121,29 @@ namespace SAES.Personal
             TextBox txtNombreSecuencia = new TextBox();
             PlaceHolderContenido.Controls.Add(txtNombreSecuencia);
 
-            Button btnCrear = new Button();
-            btnCrear.Text = "Crear";
+            Button btnCrear = new Button()
+            {
+                Text = "Crear"
+            };
+            
+
+            
             PlaceHolderContenido.Controls.Add((Button)btnCrear);
             //TODO: Conextar a la BD, tomar la secuencia y el nombre del grupo a crear
             //de los texbox y mandar a crear el grupo en la BD.
+
+            
+                //string nombreSecuencia = txtSecuencia.Text;
+                //string nombreMateria = txtNombreSecuencia.Text
+                //string query = $"INSERT INTO Grupos(Secuencia, Materia) VALUES ( '{nombreSecuencia}', '{nombreMateria}');";
+                //string cstr = @"server=VENTANAS10; database=Base; integrated security = true";
+                //SqlConnection cnx = new SqlConnection(cstr);
+                //cnx.Open();
+                //SqlCommand cmd = new SqlCommand(query, cnx);
+                //cmd.ExecuteNonQuery();
+                //cnx.Close();
+            
+
 
             //------------Parte Modificar grupo
 
@@ -135,9 +153,22 @@ namespace SAES.Personal
             PlaceHolderContenido.Controls.Add(lblDescripcion2);
 
             DropDownList ddlGrupos = new DropDownList();
-            //TODO: Conectar a la BD, obtener los nombres de todas las materias 
-            // y subirlas al ddl para poder utilizarlas.
-            ddlGrupos.Items.Add(new ListItem("3AM10 - Matemáticas"));
+
+            string cstr = @"server=VENTANAS10; database=SAES; integrated security = true";
+            SqlConnection cnx = new SqlConnection(cstr);
+            string query = "SELECT * FROM Grupos;";
+            SqlDataAdapter adp = new SqlDataAdapter(query, cnx);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            cnx.Close();
+
+            int num = ds.Tables[0].Rows.Count;
+            for(int i = 0; i < num; i++)
+            {
+                string cadena = ds.Tables[0].Rows[i]["Secuencia"] + " - " + ds.Tables[0].Rows[i]["Materia"];
+                ddlGrupos.Items.Add(new ListItem(cadena));
+            }
+                        
             PlaceHolderContenido.Controls.Add(ddlGrupos);
 
             Button btnModificar = new Button();
@@ -147,6 +178,8 @@ namespace SAES.Personal
             //TODO: Conecatar a la BD, tomar el grupo seleccionado del dropdownlist y mostrarlo a un
             //data gridview, con opción de modificar y eliminar alumnos y el profesor mostrarlo en un 
             //campo aparte 
+
+            
 
         }
 
