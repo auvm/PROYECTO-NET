@@ -137,7 +137,7 @@ namespace SAES.Personal
             
             string cstr = @"server=VENTANAS10; database=SAES; integrated security = true";
             SqlConnection cnx = new SqlConnection(cstr);
-            string query = "SELECT * FROM Agenda;";
+            string query = "SELECT EVENTO AS 'EVENTO', FECHAINICIO AS 'FECHA DE INICIO', FECHAFIN AS 'FECHA FIN', SUSPENSIONLABORES'SUSPENSIÓN DE LABORES' FROM Agenda;";
             SqlDataAdapter adp = new SqlDataAdapter(query, cnx);
             DataSet ds = new DataSet();
             adp.Fill(ds);

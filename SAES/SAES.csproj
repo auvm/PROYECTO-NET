@@ -76,6 +76,11 @@
     <Content Include="Estilos\MasterPageProfesores.css" />
     <Content Include="Imagenes-BorrarAlFinal\fotoHombre.PNG" />
     <Content Include="Imagenes-BorrarAlFinal\fotoMujer.PNG" />
+    <Content Include="Login\Login.aspx" />
+    <Content Include="Login\Login_Agenda.aspx" />
+    <Content Include="Login\Login_Ayuda.aspx" />
+    <Content Include="Login\Login_RecupearContraseña.aspx" />
+    <Content Include="Login\MasterPageLogin.css" />
     <Content Include="Personal\Personal_Agenda.aspx" />
     <Content Include="Personal\Personal_Ayuda.aspx" />
     <Content Include="Personal\Personal_Configuracion.aspx" />
@@ -114,6 +119,41 @@
     </Compile>
     <Compile Include="Alumnos\Alumno_Agenda_AgendaEscolar.aspx.designer.cs">
       <DependentUpon>Alumno_Agenda_AgendaEscolar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login_Agenda.aspx.cs">
+      <DependentUpon>Login_Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login_Agenda.aspx.designer.cs">
+      <DependentUpon>Login_Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login_Ayuda.aspx.cs">
+      <DependentUpon>Login_Ayuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login_Ayuda.aspx.designer.cs">
+      <DependentUpon>Login_Ayuda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\Login_RecupearContraseña.aspx.cs">
+      <DependentUpon>Login_RecupearContraseña.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\Login_RecupearContraseña.aspx.designer.cs">
+      <DependentUpon>Login_RecupearContraseña.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login\MasterPageLogin.Master.cs">
+      <DependentUpon>MasterPageLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login\MasterPageLogin.Master.designer.cs">
+      <DependentUpon>MasterPageLogin.Master</DependentUpon>
     </Compile>
     <Compile Include="Master\MasterPageAlumnos.Master.cs">
       <DependentUpon>MasterPageAlumnos.Master</DependentUpon>
@@ -198,6 +238,7 @@
     <Content Include="Master\MasterPageAlumnos.Master" />
     <Content Include="Master\MasterPageProfesores.Master" />
     <Content Include="Master\MasterPagePersonal.Master" />
+    <Content Include="Login\MasterPageLogin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

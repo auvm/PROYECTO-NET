@@ -24,40 +24,22 @@ namespace SAES.Personal
         protected global::System.Web.UI.WebControls.LinkButton lbInfoPersonal;
 
         /// <summary>
-        /// Control lbPersonal.
+        /// Control lbHorario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbPersonal;
+        protected global::System.Web.UI.WebControls.LinkButton lbHorario;
 
         /// <summary>
-        /// Control lbProfesores.
+        /// Control lbCalificaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbProfesores;
-
-        /// <summary>
-        /// Control lblAlumnos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lblAlumnos;
-
-        /// <summary>
-        /// Control lblGrupos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lblGrupos;
+        protected global::System.Web.UI.WebControls.LinkButton lbCalificaciones;
 
         /// <summary>
         /// Control lblCerrarSesion.

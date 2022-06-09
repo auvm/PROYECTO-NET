@@ -183,6 +183,14 @@ namespace SAES.Personal
 
         }
 
+        protected void lbHorario_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        protected void lbCalificaciones_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
