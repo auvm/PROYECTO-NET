@@ -18,6 +18,7 @@ namespace SAES.Personal
                 Label msg = new Label();
                 msg.Text = "<h2>Bienvenido</h2>";
                 PlaceHolderContenido.Controls.Add(msg);
+
             }
         }
 

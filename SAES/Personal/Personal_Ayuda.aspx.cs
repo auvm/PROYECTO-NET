@@ -35,7 +35,7 @@ namespace SAES.Personal
 
         protected void lbAyudaGeneral_Click(object sender, EventArgs e)
         {
-            
+            Response.Redirect("Personal_Ayuda.aspx");
         }
 
         protected void lblCerrarSesion_Click(object sender, EventArgs e)
