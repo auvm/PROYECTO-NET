@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -47,12 +49,24 @@ namespace SAES.Personal
             Label lblTelefono = new Label();
             Label lblCorreo = new Label();
             Label lblDireccion = new Label();
+            
+            string cstr = @"server=VENTANAS10; database=SAES; integrated security = true";
+            SqlConnection cnx = new SqlConnection(cstr);
+            string query = "SELECT * FROM administrativo;";
+            SqlDataAdapter adp = new SqlDataAdapter(query, cnx);
+            DataSet ds = new DataSet();
+            adp.Fill(ds);
+            cnx.Close();
 
-            lblNombre.Text = "<br/>Nombre: " + nombre + "<br/>";
-            lblFechaNacimiento.Text = "Fecha de Nacimiento: " + fechaNacimiento + "<br/>";
-            lblTelefono.Text = "Teléfono: " + telefono + "<br/>";
-            lblCorreo.Text = "Correo Electrónico: " + correo + "<br/>";
-            lblDireccion.Text = "Dirección: " + direccion + "<br/>";
+            lblNombre.Text = "<br/>Nombre: " + nombre + ds.Tables[0].Rows[0]["Nombre"] + " "
+                                                      + ds.Tables[0].Rows[0]["ApellidoP"] + " "
+                                                      + ds.Tables[0].Rows[0]["ApellidoM"] + " "
+                            + "<br/>";
+
+            lblFechaNacimiento.Text = "Fecha de Nacimiento: " + fechaNacimiento + ds.Tables[0].Rows[0]["FechaNacimiento"] + "<br/>";
+            lblTelefono.Text = "Teléfono: " + telefono + ds.Tables[0].Rows[0]["Telefono"] + "<br/>";
+            lblCorreo.Text = "Correo Electrónico: " + correo + ds.Tables[0].Rows[0]["Correo"] + "<br/>";
+            lblDireccion.Text = "Dirección: " + direccion + ds.Tables[0].Rows[0]["Direccion"] + "<br/>";
 
             PlaceHolderContenido.Controls.Add(lblNombre);
             PlaceHolderContenido.Controls.Add(lblFechaNacimiento);
