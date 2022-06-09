@@ -11,7 +11,7 @@
                 <li><asp:LinkButton ID="lbHorario" runat="server" Text="Horario" OnClick="lbHorario_Click"></asp:LinkButton></li>
                 <li><asp:LinkButton ID="lbGrupos" runat="server" Text="Grupos" OnClick="lbGrupos_Click"></asp:LinkButton></li>
                 <li><asp:LinkButton ID="lbCalificaciones" runat="server" Text="Calificaciones" OnClick="lbCalificaciones_Click"></asp:LinkButton></li>
-                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="lblCerrarSesion_Click"></asp:LinkButton></li>
             </ul>
         </div>
 

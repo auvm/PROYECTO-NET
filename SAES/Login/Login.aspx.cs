@@ -27,7 +27,19 @@ namespace SAES.Login
             cnx.Close();
 
             if(boleta == txtUsuario.Text) {
-                Response.Redirect("../Personal/Personal_Informacion_Personal.aspx");
+                if (txtUsuario.Text.StartsWith("2019"))
+                {
+                    Response.Redirect("../Personal/Personal_Informacion_Personal.aspx");
+                }
+                else if (txtUsuario.Text.StartsWith("2010"))
+                {
+                    Response.Redirect("../Profesores/Profesor_Informacion_Personal.aspx");
+                }
+                else if(txtUsuario.Text.StartsWith("2000"))
+                {
+                    Response.Redirect("../Alumnos/Alumno_Información Personal.aspx");
+                }
+                
             }
 
         }

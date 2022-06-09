@@ -98,7 +98,7 @@ namespace SAES.Personal
             PlaceHolderContenido.Controls.Add(lblTitulo);
         }
 
-        protected void lblGrupos_Click(object sender, EventArgs e)
+        public void lblGrupos_Click(object sender, EventArgs e)
         {
             Label lblTitulo = new Label();
             lblTitulo.Text = "<h3>Grupos</h3><br/>";
@@ -124,24 +124,29 @@ namespace SAES.Personal
             Button btnCrear = new Button()
             {
                 Text = "Crear"
+                
             };
-            
+                       
 
-            
+            //void Enviar(){
+            //    string nombreSecuencia = txtSecuencia.Text;
+            //    string nombreMateria = txtNombreSecuencia.Text;
+            //    string query2 = $"INSERT INTO Grupos(Secuencia, Materia) VALUES ( '{nombreSecuencia}', '{nombreMateria}');";
+            //    string cstr2 = @"server=VENTANAS10; database=Base; integrated security = true";
+            //    SqlConnection cnx2 = new SqlConnection(cstr2);
+            //    cnx2.Open();
+            //    SqlCommand cmd = new SqlCommand(query2, cnx);
+            //    cmd.ExecuteNonQuery();
+            //    cnx2.Close();
+            //}
+
+
             PlaceHolderContenido.Controls.Add((Button)btnCrear);
             //TODO: Conextar a la BD, tomar la secuencia y el nombre del grupo a crear
             //de los texbox y mandar a crear el grupo en la BD.
 
             
-                //string nombreSecuencia = txtSecuencia.Text;
-                //string nombreMateria = txtNombreSecuencia.Text
-                //string query = $"INSERT INTO Grupos(Secuencia, Materia) VALUES ( '{nombreSecuencia}', '{nombreMateria}');";
-                //string cstr = @"server=VENTANAS10; database=Base; integrated security = true";
-                //SqlConnection cnx = new SqlConnection(cstr);
-                //cnx.Open();
-                //SqlCommand cmd = new SqlCommand(query, cnx);
-                //cmd.ExecuteNonQuery();
-                //cnx.Close();
+                
             
 
 

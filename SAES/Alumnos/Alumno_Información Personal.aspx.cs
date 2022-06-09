@@ -81,5 +81,10 @@ namespace SAES.Alumnos
             lblTitulo.Text = "<h3>Calificaciones</h3><br/>";
             PlaceHolderContenido.Controls.Add(lblTitulo);
         }
+
+        protected void lblCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Login/Login.aspx");
+        }
     }
 }
