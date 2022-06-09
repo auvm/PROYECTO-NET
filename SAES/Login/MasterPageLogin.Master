@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageLogin.Master.cs" Inherits="SAES.Login.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link href="MasterPageLogin.css" rel="stylesheet" type="text/css">
+    <title>SAES</title>
+</head>
+<body>
+    <%--HEADER--%>
+    <header class="Cabecera">
+        <div class="EsquinaIzqCabecera"></div>
+        <div class="CentroCabecera">
+            <h1>SAES</h1>
+        </div>
+        <div class="EsquinaDerCabecera""></div>
+    </header>
+
+    <%--NAV--%>
+    <nav class="BarraNav">
+        <div class="LateralIzqNav"></div>
+        <div class="CentroNav">
+            
+            <ul>
+                <li><a href="Login.aspx">Inicio de Sesión</a></li>
+                <li><a href="Login_Agenda.aspx">Agenda</a></li>
+                <li><a href="Login_RecupearContraseña.aspx">Recuperar Contraseña</a></li>
+                <li><a href="Login_Ayuda.aspx">Ayuda</a></li>
+            </ul>
+            
+        </div>
+        <div class="LateralDerNav"></div>
+    </nav>
+    
+    <%--MAIN--%>
+    <main class="Contenido">
+        <div class="LateralIzqContenido"></div>
+        
+        
+        <div class="CentroContenido">
+            <form runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </div>
+        
+
+        <div class="LateralDerContenido"></div>
+    </main>
+
+
+    <%--FOOTER--%>
+    <footer class="PieDePagina">
+        <div class="EsqIzqFooter"></div>
+        <div class="CentroFooter">
+            <h3>Escuela Nacional Politécnica</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tellus magna, interdum ac massa sit amet, cursus lacinia ex. Pellentesque eu odio dui. Nam sed interdum mi, nec fringilla metus. Vestibulum auctor at lorem pellentesque sodales. In viverra magna enim, in gravida libero molestie ornare. In auctor mauris id lectus molestie tempus. Integer at mi libero.</p>
+        </div>
+        <div class="EsqDerFooter"></div>
+    </footer>
+    
+</body>
+</html>

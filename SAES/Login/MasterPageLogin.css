@@ -1,0 +1,220 @@
+﻿body {
+    
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*----------------------INICIA CABECERA--------------------*/
+.Cabecera {
+    height:20%;
+    width:100%;
+}
+.Cabecera div {
+    display: inline-block;
+    align-content:center;
+}
+.EsquinaIzqCabecera {
+    width: 15%;
+}
+.CentroCabecera {
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.EsquinaDerCabecera {
+    width: 15%;
+}
+/*----------------------INICIA BARRA NAVEGACIÓN------------------*/
+
+.BarraNav {
+    height: 10%;
+    width: 100%;
+}
+.BarraNav div {
+    display: inline-block;
+    align-content: center;
+}
+.LateralIzqNav {
+    width: 15%;
+}
+.LateralDerNav {
+    width: 15%;
+}
+.CentroNav {
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.CentroNav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.CentroNav li {
+    float: left;
+    width: 24.5%;
+    border-right: 1px solid black;
+}
+.CentroNav li:last-child {
+    border-right: none;
+}
+.CentroNav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.CentroNav li a:hover:not(.active) {
+    color: blueviolet;
+}
+
+.CentroNav .active {
+        background-color: cadetblue;
+    }
+
+/*----------------------INICIA CONTENIDO------------------*/
+.Contenido {
+    height: 60%;
+    width: 100%;
+    margin:0;
+    padding:0;
+}
+.Contenido div {
+    display: inline-block;
+    align-content: center;
+        
+}
+
+.LateralIzqContenido {
+    width: 15%;
+}
+
+.CentroContenido {    
+    width: 70%;
+}
+
+.LateralDerContenido {
+    width: 15%;
+}
+
+
+/*---------------------INICIA PIE DE PAGINA-------------*/
+.PieDePagina {
+    height: 20%;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+}
+
+.PieDePagina div{
+    display: inline-block;
+    align-content:center;
+}
+
+.EsqIzqFooter {
+    width: 15%;
+}
+
+.CentroFooter {
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.EsqDerFooter {
+    width: 15%;
+}
+
+/*---------------------INICIA LoginMain-------------*/
+
+.LoginMain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.LoginMain div{
+    display:inline-block;  
+    
+}
+
+.OpcionesLoginMain {
+    width: 20%;
+    height: auto;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    height: 100%;
+    
+}
+
+
+
+.ContenidoLoginMain {
+    width: 80%;
+    height: auto;
+    border: 2px solid black;
+}
+
+
+.OpcionesLoginMain ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.OpcionesLoginMain li{
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom:5px;
+}
+
+.OpcionesLoginMain li:last-child {
+    margin-top:80px;
+    margin-bottom:0;
+    vertical-align:bottom;
+}
+
+.OpcionesLoginMain li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.OpcionesLoginMain li a:hover:not(.active) {
+    color: blueviolet;
+}
+
+.OpcionesLoginMain .active {
+    background-color: cadetblue;
+}
+
+
+.ContenidoLoginMain {
+    height: auto;
+    width: 100%;
+    padding:0;
+    text-align: center;
+
+}
+
+
+.img{
+    border:1px solid black;
+    height: 300px;
+    width:250px;
+}

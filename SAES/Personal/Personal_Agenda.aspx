@@ -8,7 +8,7 @@
         <div class="OpcionesPersonalMain">
             <ul>
                 <li><asp:LinkButton ID="lbAgendaEscolar" runat="server" Text="Agenda Escolar" OnClick="lbAgendaEscolar_Click"></asp:LinkButton></li>
-                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="lblCerrarSesion_Click"></asp:LinkButton></li>
             </ul>
         </div>
 

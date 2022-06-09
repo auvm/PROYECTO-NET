@@ -7,29 +7,20 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SAES.Personal
+namespace SAES.Login
 {
 
 
-    public partial class Personal_Ayuda
+    public partial class Site1
     {
 
         /// <summary>
-        /// Control lblCerrarSesion.
+        /// Control ContentPlaceHolder4.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lblCerrarSesion;
-
-        /// <summary>
-        /// Control PlaceHolderContenido.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderContenido;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder4;
     }
 }

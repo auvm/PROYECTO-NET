@@ -82,5 +82,10 @@ namespace SAES.Personal
             btnEnviar.OnClientClick = "alert('Se ha enviado el correo con su información')";
 
         }
+
+        protected void lblCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Login/Login.aspx");
+        }
     }
 }

@@ -9,7 +9,7 @@
             <ul>
                 <li><asp:LinkButton ID="lbRecuperar" runat="server" Text="Recuperar Contraseña" OnClick="lbRecuperar_Click"></asp:LinkButton></li>
                 <li><asp:LinkButton ID="lbCambiar" runat="server" Text="Cambiar Contraseña" OnClick="lbCambiar_Click"></asp:LinkButton></li>
-                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="lblCerrarSesion_Click"></asp:LinkButton></li>
             </ul>
         </div>
 

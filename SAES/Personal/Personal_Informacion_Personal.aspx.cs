@@ -192,5 +192,10 @@ namespace SAES.Personal
         {
 
         }
+
+        protected void lblCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../Login/Login.aspx");
+        }
     }
 }

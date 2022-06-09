@@ -2,15 +2,18 @@
     Inherits="SAES.Personal.Personal_Informacion_Personal"
     MasterPageFile="~/Master/MasterPagePersonal.Master"%>
 
-<asp:Content runat="server" ID="ContentPersonalInfoPersonal" ContentPlaceHolderID="ContentPlaceHolder3">
+<asp:Content runat="server" ID="ContentAlumnosInfoPersonal" ContentPlaceHolderID="ContentPlaceHolder3">
     
     <main class ="PersonalMain">    
         <div class="OpcionesPersonalMain">
             <ul>
                 <li><asp:LinkButton ID="lbInfoPersonal" runat="server" Text="Información Personal" OnClick="lbInfoPersonal_Click"></asp:LinkButton></li>
-                <li><asp:LinkButton ID="lbHorario" runat="server" Text="Horario" OnClick="lbHorario_Click"></asp:LinkButton></li>
-                <li><asp:LinkButton ID="lbCalificaciones" runat="server" Text="Calificaciones" OnClick="lbCalificaciones_Click"></asp:LinkButton></li>
-                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lbPersonal" runat="server" Text="Personal" OnClick="lbPersonal_Click"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lbProfesores" runat="server" Text="Profesores" OnClick="lbProfesores_Click"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lblAlumnos" runat="server" Text="Alumnos" OnClick="lblAlumnos_Click"></asp:LinkButton></li>
+                <li><asp:LinkButton ID="lblGrupos" runat="server" Text="Grupos" OnClick="lblGrupos_Click"></asp:LinkButton></li>
+                
+                <li><asp:LinkButton ID="lblCerrarSesion" runat="server" Text="Cerrar Sesión" OnClick="lblCerrarSesion_Click"></asp:LinkButton></li>
             </ul>
         </div>
 
@@ -19,6 +22,3 @@
         </div>  
     </main>
 </asp:Content>
-
-
-
